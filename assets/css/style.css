@@ -1,0 +1,75 @@
+/* All of these properties help the bg image to fill the entire screen
+and not dissappear at all when minimized. */
+.bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+  }
+  .bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  h1 {
+    z-index: 9999;/* set this to something high to push to foreground*/
+    padding: 0 0 0;
+    margin-bottom: 0;
+    border-bottom: 6px double #ffffff;
+    clear: both;
+    position:absolute;
+    min-width:100%; /* 100% to ensure it goes all the way to the end*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #068a78;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    /* I got fancy with the Header font and added a shadow around it
+    Played with colors, borders, sizing, etc.  */
+  }
+
+  .header div {
+    z-index: 9999; 
+    display: block;
+    padding: 10px 0 0;
+    margin-bottom: 0;
+    margin-left: 500px;
+    clear: both;
+    position:absolute;
+    color: #068a78;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    /*I was having a lot of difficulty with this.
+    I could not figure out how to get it to change color
+    or not be underlined for some reason.*/
+    
+}
+
+a:-webkit-any-link {
+    color: #068a78 ;
+    cursor:cell;
+    text-decoration: none;
+}
+
+.header div ul {
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.header div ul li {
+
+    margin-left: 50px;
+}
+
+
