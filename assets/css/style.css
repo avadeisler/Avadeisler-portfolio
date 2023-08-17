@@ -1,42 +1,184 @@
-/* All of these properties help the bg image to fill the entire screen
-and not dissappear at all when minimized. */
-.bg {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
+/* I feel like maybe this css is a bit clunky and
+overdone. Please let me know if you have suggestions
+on how to streamline it? */
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* I tried a whole lot of ways to get the background image to work properly
+and this is what I finally settled on. */
+
+html {
+  background: url(/images/agave.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: black;
+}
+
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #04816e;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+/*figured out how to do some cool text outlining while playing around*/
+
+.header h1 {
+  font-size: 48px;
+  border-bottom: 6px double #ffffff;
+  min-width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header h2 div ul {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* margin-right: 20px; */
+  /* float: right; originally was using float attributes and then switched to flex*/
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/*this I added because the default for links is blue
+and underlined. Didn't like that.*/
+a:-webkit-any-link {
+    color: #04816e ;
+    cursor:cell;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.header h2 div ul li {
+
+    margin-left: 30px;
+    list-style: none;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image-gallery > li {
+  flex-basis: 500px; /* width: 350px; */
+}
+
+.image-gallery li img {
+  object-fit:cover;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+.image-gallery > li {
+  /* in order to make the photos clickable in the image gallery */
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  /* This is controlling the clickable area */
+  position:absolute;
+  width: 100%;
+  height: 100%; /*covers entire image area */
+  background: rgba(0, 120, 136, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0); /*makes it only appear when hovered over */
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #04816e;
+}
+
+ /* hover */
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+
+
+/* .hero {
+  height: 100vw;
+  width: 100vh;
+  margin-bottom: 25px;
+  background-image: url(./images/chromaforest.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+.content {
+  width: 50%;
+  display: inline-block;
+  margin-left: 20px;
+  flex-wrap:wrap;
+}
+
+
+
+
+/*some fancy stuff I tried that kind of worked but I couldn't
+ get it to work the way I needed.*/
+
+
+/* .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
     height: 200%;
   }
   .bg img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     min-width: 50%;
     min-height: 50%;
   }
-
-  h1 {
-    z-index: 9999;/* set this to something high to push to foreground*/
-    padding: 0 0 0;
+    h1 {
+    /* z-index: 9999; set this to something high to push to foreground */
+    /* padding: 5px 10px 0;
     margin-bottom: 0;
     border-bottom: 6px double #ffffff;
     clear: both;
-    position:absolute;
-    min-width:100%; /* 100% to ensure it goes all the way to the end*/
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:absolute; */
+    /* min-width:100%; 100% to ensure it goes all the way to the end */
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 40px;
     color: #068a78;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    /* I got fancy with the Header font and added a shadow around it
-    Played with colors, borders, sizing, etc.  */
-  }
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;  */
+     /* I got fancy with the Header font and added a shadow around it
+    Played with colors, borders, sizing, etc.   */
+   /* }  */
 
-  .header div {
-    z-index: 9999; 
+  /* .header div {
+    z-index: 9999;
     display: block;
     padding: 10px 0 0;
     margin-bottom: 0;
@@ -47,29 +189,9 @@ and not dissappear at all when minimized. */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 20px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    /*I was having a lot of difficulty with this.
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;  */
+    /* I was having a lot of difficulty with this.
     I could not figure out how to get it to change color
-    or not be underlined for some reason.*/
-    
-}
+    or not be underlined for some reason. */
 
-a:-webkit-any-link {
-    color: #068a78 ;
-    cursor:cell;
-    text-decoration: none;
-}
-
-.header div ul {
-    
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.header div ul li {
-
-    margin-left: 50px;
-}
-
-
+/* }  */
