@@ -16,7 +16,7 @@ html {
   background-color: black;
 }
 
-.header {
+.header h1 {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #04816e;
@@ -62,6 +62,58 @@ a:-webkit-any-link {
     list-style: none;
 }
 
+.About-Me {
+  display:flex;
+  flex-direction: row;
+  justify-content: space space-between;
+  /* margin-right: 14px;
+  padding: 20px;
+  clear: both;
+  width: 20%;
+  height: 100%; */
+  color: white;
+  }
+
+.About-Me img {
+border-radius: 50%; /*this allowed me to make my image a circle here*/
+max-width: 250px;
+max-height: 250px;
+width: 100%;
+margin: 0 50px 50px;
+
+}
+
+.About-Me h3 {
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #04816e;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-transform: uppercase
+  display: block;
+  margin: 100px 0 0;
+}
+
+.About-Me p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: inline-block;
+  width:400px;
+  height: 120px;
+  margin: 75px 80px 75px;
+  padding: 10px 10px 10px;
+  background-color: #049b84;
+  position: static;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 0px -1px rgba(3,79,89,1);
+  -moz-box-shadow: 10px 10px 0px -1px rgba(3,79,89,1);
+  box-shadow: 10px 10px 0px -1px rgba(3,79,89,1);
+}
+
+h4 {
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +122,7 @@ a:-webkit-any-link {
 }
 
 .image-gallery > li {
-  flex-basis: 500px; /* width: 350px; */
+  flex-basis: 500px; /*actual size of the boxes */
 }
 
 .image-gallery li img {
@@ -104,14 +156,14 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  color: #04816e;
+  color: #07d3b4;
 }
 
  /* hover */
 .image-gallery li:hover .overlay {
   transform: scale(1);
 }
-
+}
 
 
 /* .hero {
