@@ -6,7 +6,7 @@ some info about us as well as links to our work and our contact info.
 I only have one live work link since my work is limited but made placeholders for future work.
 I did get to show off some advanced css skills though!
 
-#Criteria
+# Criteria
 
 Here is the criteria for the assignment:
 
@@ -32,7 +32,7 @@ Here are some screenshots of the page completed as it is now. I am including a s
 
 Here is a link to the completed page:
 
-###License
+### License
 
 MIT License
 
