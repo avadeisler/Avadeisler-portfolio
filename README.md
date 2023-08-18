@@ -28,6 +28,9 @@ I had quite a lot of trouble with getting certain links to work and also with so
 
 Here are some screenshots of the page completed as it is now. I am including a screenshot of what it looks like when it is scaled down for phones or other small screens.
 
+I used many resources such as stack overflow and google to help me build pieces of this code. Especially while trying to complete the image gallery portion. I also referenced previous projects that we've done for class.
+The images are borrowed from Google as placeholders other than the photo of me which I took myself.
+
 ![Alt text](<Screenshot (5).png>) ![Alt text](<Screenshot (6).png>) ![Alt text](<Screenshot (7).png>) ![Alt text](<Screenshot (8).png>)
 
 Here is a link to the completed page: https://avadeisler.github.io/Avadeisler-portfolio/
