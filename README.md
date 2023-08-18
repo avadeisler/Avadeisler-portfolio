@@ -30,7 +30,7 @@ Here are some screenshots of the page completed as it is now. I am including a s
 
 ![Alt text](<Screenshot (5).png>) ![Alt text](<Screenshot (6).png>) ![Alt text](<Screenshot (7).png>) ![Alt text](<Screenshot (8).png>)
 
-Here is a link to the completed page:
+Here is a link to the completed page: https://avadeisler.github.io/Avadeisler-portfolio/
 
 ### License
 
