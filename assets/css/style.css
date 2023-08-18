@@ -1,11 +1,6 @@
 /* I feel like maybe this css is a bit clunky and
 overdone. Please let me know if you have suggestions
 on how to streamline it? */
-{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
 /* I tried a whole lot of ways to get the background image to work properly
 and this is what I finally settled on. */
@@ -65,13 +60,8 @@ a:-webkit-any-link {
 .About-Me {
   display:flex;
   flex-direction: row;
-  justify-content: space space-between;
-  /* margin-right: 14px;
-  padding: 20px;
-  clear: both;
-  width: 20%;
-  height: 100%; */
-  color: white;
+  justify-content: space-evenly;
+  transform: scale(1);
   }
 
 .About-Me img {
@@ -79,8 +69,9 @@ border-radius: 50%; /*this allowed me to make my image a circle here*/
 max-width: 250px;
 max-height: 250px;
 width: 100%;
-margin: 0 50px 50px;
-
+margin: 0px 50px 50px;
+@media 
+  
 }
 
 .About-Me h3 {
@@ -94,18 +85,15 @@ margin: 0 50px 50px;
 }
 
 .About-Me p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: inline-block;
+  display: flex;
+  justify-content: end;
   width:400px;
-  height: 120px;
-  margin: 75px 80px 75px;
+  height: auto;
+  margin: 75px 75px 75px;
   padding: 10px 10px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
   background-color: #049b84;
-  position: static;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   text-align: center;
   border-radius: 15px;
   -webkit-box-shadow: 10px 10px 0px -1px rgba(3,79,89,1);
@@ -165,6 +153,60 @@ h4 {
 }
 }
 
+.Contact h5 {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #04816e;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.Contact ul {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 10px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+
+}
+
+.Resume{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #04816e;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+/*used these media queries to change
+the way the page looks at different sizes.
+I couldn't get the box to just get fully smaller
+so I have that part hide when it gets smaller. 
+I'm sure there's a better way to do this.*/
+
+@media screen and (max-width: 600px) {
+  .About-Me img{
+    width:150px;
+    height:150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .About-Me h3 {
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
+  .About-Me p {
+    display:none;
+    }
 
 /* .hero {
   height: 100vw;
@@ -179,13 +221,13 @@ h4 {
 } */
 
 
-
+/* 
 .content {
   width: 50%;
   display: inline-block;
   margin-left: 20px;
   flex-wrap:wrap;
-}
+} */
 
 
 
