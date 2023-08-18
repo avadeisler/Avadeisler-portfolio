@@ -6,7 +6,7 @@ on how to streamline it? */
 and this is what I finally settled on. */
 
 html {
-  background: url(/images/agave.jpg) no-repeat center center fixed;
+  background: url(./images/agave.jpg) no-repeat center center fixed;
   background-size: cover;
   background-color: black;
 }
