@@ -6,7 +6,7 @@ some info about us as well as links to our work and our contact info.
 I only have one live work link since my work is limited but made placeholders for future work.
 I did get to show off some advanced css skills though!
 
-# Criteria
+## Criteria
 
 Here is the criteria for the assignment:
 
@@ -24,24 +24,24 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-### Thoughts
+## Thoughts
 
 I had quite a lot of trouble with getting certain links to work and also with some layout challenges.
 
 Here are some screenshots of the page completed as it is now. I am including a screenshot of what it looks like when it is scaled down for phones or other small screens.
 
-##### Disclaimer
+## Disclaimer
 
 I used many resources such as stack overflow and google to help me build pieces of this code. Especially while trying to complete the image gallery portion. I also referenced previous projects that we've done for class.
 The images are borrowed from Google as placeholders other than the photo of me which I took myself.
 
-###### Screenshots and Link
+## Screenshots and Link
 
 ![Alt text](<Screenshot (5).png>) ![Alt text](<Screenshot (6).png>) ![Alt text](<Screenshot (7).png>) ![Alt text](<Screenshot (8).png>)
 
 Here is a link to the completed page: https://avadeisler.github.io/Avadeisler-portfolio/
 
-####### License
+## License
 
 MIT License
 
