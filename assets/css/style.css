@@ -7,6 +7,8 @@ and this is what I finally settled on. */
 
 html {
  background: #000 center/cover url(./images/agave.jpg) no-repeat;
+ width:200%;
+ 
 }
 
 .header h1 {
