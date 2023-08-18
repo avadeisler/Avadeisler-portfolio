@@ -7,7 +7,7 @@ and this is what I finally settled on. */
 
 html {
 
-background: url(../images/agave.jpg) center center cover no-repeat fixed;
+background: url(..\images\agave.jpg) center center cover no-repeat fixed;
 background-color: black;
  
 }
